@@ -1,49 +1,104 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width: 1200px) {
+	.wrap {
+		width: 740px;
+		/*outline: 1px solid red;*/
+	}
 
-}
+	.stages__item {
+		height: auto;
+	}
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+	.stages__col-2 {
+		padding: 10px;
+	}
 
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	
+@media only screen and (max-width: 768px) {
+	.wrap {
+		width: calc(100% - 40px);
+	}
+
+	.menu__list{
+		flex-wrap: wrap;
+
+	}
+	.block-title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.offers__item {
+		width: 100%;
+	}
+
+	.stages__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+	}
+
+	.stages__col-1 {
+		padding: 10px;
+	}
+
+	.bonus__content {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.bonus__bar {
+		max-width: 100%;
+		height: auto;
+		margin-top: 10px;
+	}
+
+	.collage__item{
+		width: calc(50% - 0.5rem);
+	}
+
+
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
-		-o-transition-property: none !important;
 		-moz-transition-property: none !important;
 		-ms-transition-property: none !important;
+		-o-transition-property: none !important;
 		-webkit-transition-property: none !important;
 		transition-property: none !important;
 		/*CSS transforms*/
-		-o-transform: none !important;
 		-moz-transform: none !important;
 		-ms-transform: none !important;
+		-o-transform: none !important;
 		-webkit-transform: none !important;
 		transform: none !important;
 		/*CSS animations*/
-		-webkit-animation: none !important;
 		-moz-animation: none !important;
-		-o-animation: none !important;
 		-ms-animation: none !important;
+		-o-animation: none !important;
+		-webkit-animation: none !important;
 		animation: none !important;
 	}
 
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 480px) {
 
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width: 320px) {
 
 }
 
@@ -51,26 +106,26 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width: 320px) {
 
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width: 480px) {
 
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width: 992px) {
 
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
 
 }
